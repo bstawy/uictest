@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../extensions/theme_ext.dart';
 import '../theme/custom_colors.dart';
+import '../theme/custom_text_styles.dart';
 
 class CustomButton extends StatelessWidget {
   final String title;
@@ -15,6 +17,7 @@ class CustomButton extends StatelessWidget {
       paddingHorizontal;
   final EdgeInsetsGeometry? padding;
   final Color? borderColor, backgroudnColor;
+  final Widget? prefixIcon, suffixIcon;
   final VoidCallback? onPressed;
 
   const CustomButton({
@@ -31,11 +34,15 @@ class CustomButton extends StatelessWidget {
     this.padding,
     this.borderColor,
     this.backgroudnColor,
+    this.prefixIcon,
+    this.suffixIcon,
     this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
+    final kColors = context.colors;
+
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
@@ -54,12 +61,19 @@ class CustomButton extends StatelessWidget {
         ),
         minimumSize: Size(minWidth ?? 1.sw, minHeight ?? 44.h),
       ),
-      child: Text(
-        title,
-        style: titleStyle ??
-            const TextStyle(
-              color: CustomColors.purple,
-            ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          if (prefixIcon != null) prefixIcon!,
+          const Spacer(),
+          TextHelpers.mediumText(
+            text: title,
+            fontSize: 14,
+            color: kColors.primary,
+          ),
+          const Spacer(),
+          if (suffixIcon != null) suffixIcon!,
+        ],
       ),
     );
   }

@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 
 class CustomColors {
   static const Color purple = Color(0xFF6B47F5);
+  static const Color lightPurple = Color(0xFFBDACFF);
   static const Color whiteLight = Color(0xFFF3F3F3);
   static const Color white = Color(0xFFF9FAFB);
   static const Color dark = Color(0xFF191919);
   static const Color darkGrey = Color(0xFF3D3D3D);
   static const Color grey = Color(0xFF656565);
   static const Color lightGrey = Color(0xFFb5b5b5);
+  static const Color lighterGrey = Color(0xFFcfcfcf);
+  // static const Color black = Color(0xFFF0F0F0);
   // static const int primaryColorDark = 0xFF303F9F;
   // static const int primaryColorLight = 0xFFC5CAE9;
   // static const int accentColor = 0xFF00BCD4;
