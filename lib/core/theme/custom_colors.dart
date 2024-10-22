@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+
+class CustomColors {
+  static const Color purple = Color(0xFF6B47F5);
+  static const Color whiteLight = Color(0xFFF3F3F3);
+  static const Color white = Color(0xFFF9FAFB);
+  static const Color dark = Color(0xFF191919);
+  static const Color darkGrey = Color(0xFF3D3D3D);
+  static const Color grey = Color(0xFF656565);
+  static const Color lightGrey = Color(0xFFb5b5b5);
+  // static const int primaryColorDark = 0xFF303F9F;
+  // static const int primaryColorLight = 0xFFC5CAE9;
+  // static const int accentColor = 0xFF00BCD4;
+  // static const int primaryTextColor = 0xFF212121;
+  // static const int secondaryTextColor = 0xFF757575;
+  // static const int dividerColor = 0xFFBDBDBD;
+  // static const int errorColor = 0xFFD32F2F;
+  // static const int successColor = 0xFF388E3C;
+  // static const int warningColor = 0xFFFFA000;
+  // static const int infoColor = 0xFF1976D2;
+  // static const int backgroundColor = 0xFFF5F5F5;
+  // static const int scaffoldBackgroundColor = 0xFFFFFFFF;
+  // static const int cardBackgroundColor = 0xFFFFFFFF;
+  // static const int dialogBackgroundColor = 0xFFFFFFFF;
+  // static const int bottomAppBarColor = 0xFFFFFFFF;
+  // static const int bottomAppBarSelectedColor = 0xFF3F51B5;
+  // static const int bottomAppBarUnselectedColor = 0xFFBDBDBD;
+  // static const int bottomAppBarDisabledColor = 0xFFBDBDBD;
+  // static const int bottomAppBarIconColor = 0xFFFFFFFF;
+  // static const int bottomAppBarSelectedIconColor = 0xFFFFFFFF;
+  // static const int bottomAppBarUnselectedIconColor = 0xFFFFFFFF;
+  // static const int bottomAppBarDisabledIconColor = 0xFFFFFFFF;
+  // static const int bottomAppBarLabelColor = 0xFFFFFFFF;
+  // static const int bottomAppBarSelectedLabelColor = 0xFFFFFFFF;
+  // static const int bottomAppBarUnselectedLabelColor = 0xFFFFFFFF;
+  // static const int bottomAppBarDisabledLabelColor = 0xFFFFFFFF;
+  // static const int bottomAppBarBackgroundColor = 0xFF3F51B5;
+  // static const int bottomAppBarSelectedBackgroundColor = 0xFF3F51B5;
+  // static const int bottomAppBarUnselectedBackgroundColor = 0xFFBDBDBD;
+  // static const int bottomAppBarDisabledBackgroundColor = 0xFFBDBDBD;
+  // static const int bottomAppBarElevation = 8;
+  // static const int bottomAppBarSelectedElevation = 8;
+  // static const int bottomAppBarUnselectedElevation = 8;
+}
